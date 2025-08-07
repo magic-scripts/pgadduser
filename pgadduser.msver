@@ -1,0 +1,12 @@
+# pgadduser Version Tree
+# Format: version|version_name|download_url|checksum
+#         config|key|default_value|description|category|scripts
+
+# Version information
+version|dev|https://raw.githubusercontent.com/magic-scripts/pgadduser/develop/pgadduser.sh|dev
+
+# Configuration keys
+config|POSTGRES_HOST|localhost|PostgreSQL server hostname or IP address|database|pgadduser
+config|POSTGRES_PORT|5432|PostgreSQL server port number|database|pgadduser
+config|POSTGRES_ADMIN|postgres|PostgreSQL admin username|database|pgadduser
+config|POSTGRES_PASSWORD||PostgreSQL admin password|database|pgadduser
