@@ -1,0 +1,51 @@
+.TH PGADDUSER 1 "August 2025" "pgadduser 0.0.1" "User Commands"
+.SH NAME
+pgadduser \- PostgreSQL user and database setup
+.SH SYNOPSIS
+.B pgadduser
+.B \-u
+.I username
+.B \-p
+.I password
+[\fB\-d\fR \fIdatabase_name\fR]
+.SH DESCRIPTION
+pgadduser creates PostgreSQL users and databases with proper permissions and security settings.
+.SH OPTIONS
+.TP
+.B \-u \fIusername\fR
+PostgreSQL username (required)
+.TP
+.B \-p \fIpassword\fR
+PostgreSQL user password (required)
+.TP
+.B \-d \fIdatabase_name\fR
+Database name (default: same as username)
+.TP
+.B \-\-help
+Show help message
+.SH CONFIGURATION
+Uses Magic Scripts configuration system:
+.TP
+.B POSTGRES_HOST
+PostgreSQL host (default: localhost)
+.TP
+.B POSTGRES_PORT
+PostgreSQL port (default: 5432)
+.TP
+.B POSTGRES_ADMIN
+PostgreSQL admin user (default: postgres)
+.TP
+.B POSTGRES_PASSWORD
+PostgreSQL admin password
+.SH EXAMPLES
+.TP
+.B pgadduser \-u myapp \-p secret123
+Create user 'myapp' with password and database
+.TP
+.B pgadduser \-u testuser \-p pass \-d testdb
+Create user with specific database name
+.SH AUTHOR
+Magic Scripts development team
+.SH SEE ALSO
+.BR ms (1),
+.BR psql (1)

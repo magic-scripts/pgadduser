@@ -7,8 +7,8 @@ VERSION="0.0.1"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Try to load config system
-if [ -f "$SCRIPT_DIR/../core/config.sh" ]; then
-    . "$SCRIPT_DIR/../core/config.sh"
+if [ -f "$SCRIPT_DIR/../../ms/core/config.sh" ]; then
+    . "$SCRIPT_DIR/../../ms/core/config.sh"
 elif [ -f "$HOME/.local/share/magicscripts/core/config.sh" ]; then
     . "$HOME/.local/share/magicscripts/core/config.sh"
 fi
