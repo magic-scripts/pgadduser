@@ -1,10 +1,10 @@
 # pgadduser Version Tree
-# Format: version|version_name|download_url|checksum|install_script|uninstall_script
+# Format: version|version_name|download_url|checksum|install_script|uninstall_script|update_script
 #         config|key|default_value|description|category|scripts
 
 # Version information
 # install_script and uninstall_script are optional (use empty string if not needed)
-version|dev|https://raw.githubusercontent.com/magic-scripts/pgadduser/develop/scripts/pgadduser.sh|dev|https://raw.githubusercontent.com/magic-scripts/pgadduser/develop/installer/install.sh|https://raw.githubusercontent.com/magic-scripts/pgadduser/develop/installer/uninstall.sh
+version|dev|https://raw.githubusercontent.com/magic-scripts/pgadduser/develop/scripts/pgadduser.sh|dev|https://raw.githubusercontent.com/magic-scripts/pgadduser/develop/installer/install.sh|https://raw.githubusercontent.com/magic-scripts/pgadduser/develop/installer/uninstall.sh|
 
 # Configuration keys
 config|POSTGRES_HOST|localhost|PostgreSQL server hostname or IP address|database|pgadduser
